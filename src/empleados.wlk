@@ -59,7 +59,17 @@ object baigorria {
 	}
 	
 	method gastar(cuanto){
-		deuda+= cuanto
+		
+			if (dinero > cuanto){
+			dinero=dinero-cuanto
+			deuda=0 	
+		} else {
+			
+			deuda= deuda + cuanto
+			dinero=0
+			
+		}
+		
 		
 	}
 	
